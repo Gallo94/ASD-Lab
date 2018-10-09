@@ -15,6 +15,18 @@ public class CombinationLock
 	}
 	
 	/**
+	 * Crea la cassaforte aperta con combinazione iniziale "AAA" 
+	 */
+	public CombinationLock()
+	{
+		this.open() = true;
+		this.combination = new char[3];
+		this.combination[0] = 'A';
+		this.combination[1] = 'A';
+		this.combination[2] = 'A';
+	}
+	
+	/**
 	 * Ritorna lo stato della cassaforte
 	 * 
 	 * @return lo stato della cassaforte, true se aperta, false se chiusa
@@ -34,5 +46,23 @@ public class CombinationLock
 	{
 		// TODO
 		return;
+	}
+	
+	/**
+	 * Chiude la cassaforte e mantiene la combinazione attiva
+	 */
+	public void lock()
+	{
+		// TODO
+	}
+	
+	/**
+	 * Chiude la cassaforte
+	 * 
+	 * param newCombination la nuova combinazione
+	 */
+	public void isLock(char[] newCombination)
+	{
+		// TODO
 	}
 }
